@@ -13,7 +13,7 @@ The main objectives of this project are:<br />
 Images
 
 SpeedBank HomePage
-![image](https://github.com/Aaronds20/SpeedBank/assets/105139489/3def0e2d-28e8-4545-8449-3667ef0b67c4)
+
 
 SpeedBank Customer SignIn Page
  ![image](https://github.com/Aaronds20/SpeedBank/assets/105139489/3ad604f9-b5d7-43da-ab0e-1f1363fbc1e3)
