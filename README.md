@@ -13,55 +13,58 @@ The main objectives of this project are:<br />
 Images
 
 SpeedBank HomePage
-<img width="451" alt="Screenshot 2023-12-26 094802" src="https://github.com/Aaronds20/SpeedbankApp/assets/105139489/9d663d34-d4ae-4a51-87fb-681e96c7ffe0">
-
+<img width="451" alt="Screenshot 2023-12-26 094802" src="https://github.com/Aaronds20/SpeedbankApp/assets/105139489/12122d82-7597-4961-baaa-5f7df7c5f71e">
 
 SpeedBank Customer SignIn Page
- ![image](https://github.com/Aaronds20/SpeedBank/assets/105139489/3ad604f9-b5d7-43da-ab0e-1f1363fbc1e3)
+ <img width="447" alt="Screenshot 2023-12-26 094835" src="https://github.com/Aaronds20/SpeedbankApp/assets/105139489/8ba76a76-f280-4455-9eaf-cf6b5d21b5ec">
+
 
 SpeedBank Customer Forgot Password Page
-![image](https://github.com/Aaronds20/SpeedBank/assets/105139489/b1081036-6939-48b4-a072-fef5299412c6)
-
+<img width="452" alt="Screenshot 2023-12-26 094924" src="https://github.com/Aaronds20/SpeedbankApp/assets/105139489/9720a0a8-efa5-4888-8ea6-3356790aa1b4">
  
 SpeedBank Account Creation Page
- ![image](https://github.com/Aaronds20/SpeedBank/assets/105139489/9bf16ac1-26d7-4cbd-abc4-3dfab306e8b7)
-
+ <img width="459" alt="Screenshot 2023-12-26 094952" src="https://github.com/Aaronds20/SpeedbankApp/assets/105139489/afb18239-6d20-46b2-a9a7-ec54fe38ab23">
 
 SpeedBank Customer Dashboard
-![image](https://github.com/Aaronds20/SpeedBank/assets/105139489/c9b6cebf-335d-4e6d-8052-ef8bccd75bca)
+<img width="452" alt="Screenshot 2023-12-26 095009" src="https://github.com/Aaronds20/SpeedbankApp/assets/105139489/6fa5845a-c598-4e0b-ab31-18b0d68298b9">
+
 
 SpeedBank Customer Details Page
-![image](https://github.com/Aaronds20/SpeedBank/assets/105139489/d2052fbc-a299-4e6b-8cbf-59e60554754b)
+<img width="456" alt="Screenshot 2023-12-26 095025" src="https://github.com/Aaronds20/SpeedbankApp/assets/105139489/33a9f25c-ef56-433e-aac3-8e0c1d06e137">
 
-![image](https://github.com/Aaronds20/SpeedBank/assets/105139489/2389dbff-0213-42c2-8e08-fcdef3d39769)
+
+<img width="457" alt="Screenshot 2023-12-26 095046" src="https://github.com/Aaronds20/SpeedbankApp/assets/105139489/2543d0a7-6721-443e-9371-dfb5e822d2cd">
 
 
 SpeedBank Money Transfer Page
-![image](https://github.com/Aaronds20/SpeedBank/assets/105139489/f7212668-bc26-4abe-a0eb-f20a5ba85d3f)
+<img width="462" alt="Screenshot 2023-12-26 095101" src="https://github.com/Aaronds20/SpeedbankApp/assets/105139489/efadb54a-12f0-451c-836a-d2ff6e458263">
 
-![image](https://github.com/Aaronds20/SpeedBank/assets/105139489/9741abf3-b6e2-4777-afd3-832c1eb04346)
+<img width="473" alt="Screenshot 2023-12-26 095116" src="https://github.com/Aaronds20/SpeedbankApp/assets/105139489/109b193d-089b-4f50-b402-ceb4867e578b">
+
+<img width="462" alt="Screenshot 2023-12-26 095130" src="https://github.com/Aaronds20/SpeedbankApp/assets/105139489/ef99e210-75bf-4b7d-9737-48e0898bebc7">
 
 SpeedBank View Balance Statement Page
-![image](https://github.com/Aaronds20/SpeedBank/assets/105139489/ac1c8cb0-36db-4550-8ddc-7a4c10b29108)
+<img width="452" alt="Screenshot 2023-12-26 095144" src="https://github.com/Aaronds20/SpeedbankApp/assets/105139489/64d8fa92-977a-4859-949f-eabf2f9b6081">
 
 SpeedBank Customer Loan Page
-![image](https://github.com/Aaronds20/SpeedBank/assets/105139489/a8a30656-0446-47b8-8339-c48bc4c6bac8)
+<img width="462" alt="Screenshot 2023-12-26 095159" src="https://github.com/Aaronds20/SpeedbankApp/assets/105139489/2811b1a1-fc9b-4ee0-aab4-03f988e84859">
 
-![image](https://github.com/Aaronds20/SpeedBank/assets/105139489/882b3f94-64cf-40e4-8727-d5687bba0865)
+<img width="457" alt="Screenshot 2023-12-26 095224" src="https://github.com/Aaronds20/SpeedbankApp/assets/105139489/de8d960a-a886-4ed5-804e-7d64d59e2664">
 
 SpeedBank Debit Card Page
-![image](https://github.com/Aaronds20/SpeedBank/assets/105139489/8a9932c2-48be-4c71-a3f8-59fad931d7ad)
+<img width="458" alt="Screenshot 2023-12-26 095236" src="https://github.com/Aaronds20/SpeedbankApp/assets/105139489/93f9288e-3d7d-4c6f-b7d9-8969e4dbd035">
 
-![image](https://github.com/Aaronds20/SpeedBank/assets/105139489/e0af0d47-fa4f-4e47-8e54-5ca6317c3f87)
+<img width="463" alt="Screenshot 2023-12-26 095254" src="https://github.com/Aaronds20/SpeedbankApp/assets/105139489/9a4c12b9-eec9-47b2-a47e-a4e07a572cb5">
 
 SpeedBank Admin SignIn Page
-![image](https://github.com/Aaronds20/SpeedBank/assets/105139489/159cb5b8-0e6c-420b-9632-1ba5e10c0fa6)
+<img width="462" alt="Screenshot 2023-12-26 095307" src="https://github.com/Aaronds20/SpeedbankApp/assets/105139489/b4104fd4-29e8-487d-b620-9f3bf2f1cae5">
 
 SpeedBank Admin Forgot Password Page
-![image](https://github.com/Aaronds20/SpeedBank/assets/105139489/1229285d-2cf8-4a9e-8b9e-14ba41e2ad38)
+<img width="452" alt="Screenshot 2023-12-26 095319" src="https://github.com/Aaronds20/SpeedbankApp/assets/105139489/1704a596-6609-4dbd-829f-9de3dcc3d210">
 
 SpeedBank Admin Dashboard
-![image](https://github.com/Aaronds20/SpeedBank/assets/105139489/915fdc34-b7a6-4e02-a587-efe9a94ab416)
+<img width="459" alt="Screenshot 2023-12-26 095334" src="https://github.com/Aaronds20/SpeedbankApp/assets/105139489/4e77ebe0-eca4-49c5-a3a5-190c3f512a5e">
 
 SpeedBank Summary Report
-![image](https://github.com/Aaronds20/SpeedBank/assets/105139489/127c1bca-8305-4104-895e-490d4d57b26b)
+<img width="401" alt="Screenshot 2023-12-26 095352" src="https://github.com/Aaronds20/SpeedbankApp/assets/105139489/9d411fd4-6e90-429a-8649-f1e4ab7442c9">
+
