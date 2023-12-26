@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--
+  Copyright (c) 2015, 2019, Gluon and/or its affiliates.
+  All rights reserved. Use is subject to license terms.
+
+  This file is available and licensed under the following license:
+
+  Redistribution and use in source and binary forms, with or without
+  modification, are permitted provided that the following conditions
+  are met:
+
+  - Redistributions of source code must retain the above copyright
+    notice, this list of conditions and the following disclaimer.
+  - Redistributions in binary form must reproduce the above copyright
+    notice, this list of conditions and the following disclaimer in
+    the documentation and/or other materials provided with the distribution.
+  - Neither the name of Oracle Corporation nor the names of its
+    contributors may be used to endorse or promote products derived
+    from this software without specific prior written permission.
+
+  THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS
+  "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT
+  LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR
+  A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT
+  OWNER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL,
+  SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT
+  LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE,
+  DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY
+  THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT
+  (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE
+  OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+-->
+
+<?import java.lang.String?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-1.0" maxWidth="-1.0" prefHeight="650.0" prefWidth="900.0" style="-fx-background-color: #eebef2;" stylesheets="@application.css" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.speedbank.BanktoBankMoneyTransferController">
+   <children>
+      <Rectangle arcHeight="50.0" arcWidth="50.0" fill="#65e4bc" height="136.0" layoutX="55.0" layoutY="143.0" opacity="0.74" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="502.0" />
+      <Label layoutX="75.0" layoutY="160.0" prefHeight="23.0" prefWidth="218.0" text="Sender Account Number" textFill="#665252">
+         <font>
+            <Font name="Times New Roman Bold" size="20.0" />
+         </font>
+      </Label>
+      <Label fx:id="s_balance" layoutX="223.0" layoutY="244.0" prefHeight="19.0" prefWidth="186.0" textFill="#665252">
+         <font>
+            <Font name="Times New Roman Bold" size="18.0" />
+         </font>
+      </Label>
+      <Button contentDisplay="TOP" focusTraversable="false" layoutX="221.0" layoutY="562.0" mnemonicParsing="false" onAction="#OnMoneyTransfers" prefHeight="80.0" prefWidth="158.0" text="Transfer">
+         <font>
+            <Font name="Times New Roman Bold" size="20.0" />
+         </font>
+         <graphic>
+            <ImageView fitHeight="40.0" fitWidth="51.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="/com/speedbank/assets/images/transfer.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+      <Button alignment="CENTER" focusTraversable="false" layoutX="7.0" layoutY="6.0" mnemonicParsing="false" onAction="#GoToMainTransferPage" prefHeight="37.0" prefWidth="58.0">
+         <font>
+            <Font name="Times New Roman Bold" size="20.0" />
+         </font>
+         <graphic>
+            <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="/com/speedbank/assets/images/Back.png" />
+               </image>
+            </ImageView>
+         </graphic>
+         <opaqueInsets>
+            <Insets bottom="12.0" left="10.0" right="12.0" top="10.0" />
+         </opaqueInsets>
+      </Button>
+      <TextField fx:id="from_accountno" editable="false" focusTraversable="false" layoutX="284.0" layoutY="154.0" prefHeight="26.0" prefWidth="218.0">
+         <font>
+            <Font name="Times New Roman Bold" size="20.0" />
+         </font>
+         <styleClass>
+            <String fx:value="area" />
+            <String fx:value="text" />
+         </styleClass>
+      </TextField>
+      <Label fx:id="name" layoutX="223.0" layoutY="215.0" prefHeight="19.0" prefWidth="186.0" textFill="#665252">
+         <font>
+            <Font name="Times New Roman Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" layoutX="145.0" layoutY="215.0" prefHeight="20.0" prefWidth="76.0" text="Name" textFill="#665252">
+         <font>
+            <Font name="Times New Roman Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" layoutX="145.0" layoutY="244.0" prefHeight="20.0" prefWidth="76.0" text="Balance" textFill="#665252">
+         <font>
+            <Font name="Times New Roman Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="invalidatedetails" alignment="CENTER" layoutX="69.0" layoutY="520.0" prefHeight="19.0" prefWidth="460.0" textFill="#dc0808">
+         <font>
+            <Font name="Times New Roman Bold" size="16.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" layoutX="43.0" layoutY="85.0" prefHeight="38.0" prefWidth="524.0" text="Bank to Bank Transfer Money Page" textAlignment="CENTER">
+         <font>
+            <Font name="KimberleyBl-Regular" size="30.0" />
+         </font>
+         <textFill>
+            <LinearGradient endX="0.8068181673685709" endY="0.6742424097928134">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color red="0.02912280708551407" green="0.05727485194802284" blue="0.8736842274665833" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="0.9894737005233765" green="0.46175438165664673" blue="1.0985364845821094E-16" />
+                     </color>
+                  </Stop>
+               </stops>
+            </LinearGradient>
+         </textFill>
+      </Label>
+      <GridPane layoutX="65.0" layoutY="302.0" prefHeight="203.0" prefWidth="471.0">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="250.79998779296875" minWidth="10.0" prefWidth="246.79998779296875" />
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="225.20001220703125" minWidth="10.0" prefWidth="213.20001220703125" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints maxHeight="49.6" minHeight="10.0" prefHeight="49.6" vgrow="SOMETIMES" />
+          <RowConstraints maxHeight="43.9999755859375" minHeight="10.0" prefHeight="35.99999999999999" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <RadioButton fx:id="savings" focusTraversable="false" mnemonicParsing="false" text="Savings" textFill="#665252" GridPane.columnIndex="1">
+               <font>
+                  <Font name="Times New Roman Bold" size="18.0" />
+               </font>
+               <toggleGroup>
+                  <ToggleGroup fx:id="accounts" />
+               </toggleGroup>
+            </RadioButton>
+            <RadioButton fx:id="current" focusTraversable="false" mnemonicParsing="false" prefHeight="30.0" prefWidth="111.0" text="Current" textFill="#665252" toggleGroup="$accounts" GridPane.columnIndex="1" GridPane.halignment="RIGHT" GridPane.valignment="CENTER">
+               <font>
+                  <Font name="Times New Roman Bold" size="18.0" />
+               </font>
+            </RadioButton>
+            <Label prefHeight="23.0" prefWidth="218.0" text="Receiver Account Type" textFill="#665252" GridPane.halignment="RIGHT">
+               <font>
+                  <Font name="Times New Roman Bold" size="20.0" />
+               </font>
+            </Label>
+            <Label prefHeight="23.0" prefWidth="232.0" text="Receiver Account Number" textFill="#665252" GridPane.halignment="RIGHT" GridPane.rowIndex="1">
+               <font>
+                  <Font name="Times New Roman Bold" size="20.0" />
+               </font>
+            </Label>
+            <TextField fx:id="to_accountno" focusTraversable="false" prefHeight="26.0" prefWidth="237.0" GridPane.columnIndex="1" GridPane.rowIndex="1">
+               <font>
+                  <Font name="Times New Roman" size="14.0" />
+               </font>
+            </TextField>
+            <Label prefHeight="23.0" prefWidth="186.0" text="Transfer Amount" textFill="#665252" GridPane.halignment="RIGHT" GridPane.rowIndex="2">
+               <font>
+                  <Font name="Times New Roman Bold" size="20.0" />
+               </font>
+            </Label>
+            <TextField fx:id="T_amount" focusTraversable="false" prefHeight="26.0" prefWidth="186.0" GridPane.columnIndex="1" GridPane.rowIndex="2">
+               <font>
+                  <Font name="Times New Roman" size="14.0" />
+               </font>
+            </TextField>
+            <Label prefHeight="23.0" prefWidth="159.0" text="IFSC Code" textFill="#665252" GridPane.halignment="RIGHT" GridPane.rowIndex="3">
+               <font>
+                  <Font name="Times New Roman Bold" size="20.0" />
+               </font>
+            </Label>
+            <TextField fx:id="ifsccode" focusTraversable="false" GridPane.columnIndex="1" GridPane.rowIndex="3">
+               <font>
+                  <Font name="Times New Roman" size="14.0" />
+               </font>
+            </TextField>
+         </children>
+      </GridPane>
+      <Label fx:id="pin" layoutX="183.0" layoutY="33.0" visible="false" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#ba2914" height="650.0" layoutX="622.0" stroke="#ebf2b4" strokeType="INSIDE" strokeWidth="0.0" width="292.0" />
+      <ImageView fitHeight="304.0" fitWidth="277.0" layoutX="630.0" layoutY="173.0" nodeOrientation="INHERIT" pickOnBounds="true">
+         <image>
+            <Image url="/com/speedbank/assets/images/SpeedBank-Main.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

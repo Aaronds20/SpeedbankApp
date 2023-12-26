@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.Group?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.shape.CubicCurve?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="a_pane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="750.0" prefWidth="1000.0" style="-fx-background-color: linear-gradient(from 28.0303% 12.5% to 100.0% 76.5152%, #2fc4d4 0.0%, #bae10b 100.0%);" stylesheets="@application.css" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.speedbank.HomePageController">
+   <children>
+      <ImageView fitHeight="366.0" fitWidth="1004.0" layoutX="-3.0" layoutY="-2.0" pickOnBounds="true">
+         <image>
+            <Image url="/com/speedbank/assets/images/Homepage-new.jpg" />
+         </image>
+      </ImageView>
+      <Group layoutX="-12.0" layoutY="306.0">
+         <children>
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#a00bd985" height="144.0" opacity="0.64" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="1013.0" />
+            <Label layoutX="52.0" layoutY="63.0" prefHeight="26.0" prefWidth="930.0" text="~Our goal is to be the preferred provider of targeted financial service 24X7 for our customers." textFill="#f70505">
+               <font>
+                  <Font name="Times New Roman Bold Italic" size="24.0" />
+               </font>
+            </Label>
+         </children>
+      </Group>
+      <HBox layoutX="629.0" layoutY="1.0">
+         <children>
+            <JFXButton buttonType="RAISED" focusTraversable="false" onAction="#toUserPage" prefHeight="40.0" prefWidth="188.0" ripplerFill="#2508e1" text="Customer Login" textFill="#0af454">
+               <font>
+                  <Font name="Times New Roman Bold" size="22.0" />
+               </font>
+            </JFXButton>
+            <HBox prefHeight="100.0" prefWidth="21.0" />
+            <JFXButton buttonType="RAISED" focusTraversable="false" onAction="#toAdminPage" prefWidth="154.0" ripplerFill="#dc0b93" text="Admin Login" textFill="#07cadc">
+               <font>
+                  <Font name="Times New Roman Bold" size="22.0" />
+               </font>
+            </JFXButton>
+         </children>
+      </HBox>
+      <Label layoutX="442.0" layoutY="690.0" prefHeight="23.0" prefWidth="150.0" text="+91 8879672365" textFill="#e70c0c">
+         <font>
+            <Font name="Times New Roman Bold" size="20.0" />
+         </font>
+      </Label>
+      <ImageView layoutX="377.0" layoutY="677.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="/com/speedbank/assets/images/Phone Call.png" />
+         </image>
+      </ImageView>
+      <CubicCurve controlX1="50.0" controlX2="50.0" controlY1="-173.13333129882812" controlY2="100.0" endX="225.94903564453125" endY="-4.5228271484375" layoutX="854.0" layoutY="617.0" rotate="90.0" startX="-81.16567993164062" startY="12.749027252197266" stroke="BLACK" strokeWidth="0.0">
+         <fill>
+            <LinearGradient endX="1.0" endY="1.0">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color red="1.0" green="0.29756346344947815" blue="0.11999999731779099" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="1.0" green="1.0" blue="1.0" />
+                     </color>
+                  </Stop>
+               </stops>
+            </LinearGradient>
+         </fill>
+      </CubicCurve>
+      <CubicCurve controlX1="50.0" controlX2="50.0" controlY1="-173.13333129882812" controlY2="100.0" endX="225.94903564453125" endY="-4.5228271484375" layoutX="66.0" layoutY="617.0" rotate="270.0" startX="-81.16567993164062" startY="12.749027252197266" stroke="BLACK" strokeWidth="0.0">
+         <fill>
+            <LinearGradient endX="1.0" endY="1.0">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color red="1.0" green="0.29756346344947815" blue="0.11999999731779099" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="1.0" green="1.0" blue="1.0" />
+                     </color>
+                  </Stop>
+               </stops>
+            </LinearGradient>
+         </fill>
+      </CubicCurve>
+   </children>
+</AnchorPane>

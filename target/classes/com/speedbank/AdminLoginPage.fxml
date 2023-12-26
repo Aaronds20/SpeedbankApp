@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.Blend?>
+<?import javafx.scene.effect.Light.Distant?>
+<?import javafx.scene.effect.Lighting?>
+<?import javafx.scene.effect.Shadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="650.0" prefWidth="900.0" style="-fx-background-color: #afd1e3;" stylesheets="@application.css" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.speedbank.AdminLoginPageController">
+   <children>
+      <Label fx:id="invalidate" layoutX="498.0" layoutY="356.0" prefHeight="19.0" prefWidth="282.0" textFill="RED">
+         <font>
+            <Font name="Times New Roman Bold" size="16.0" />
+         </font>
+      </Label>
+      <Hyperlink alignment="CENTER" focusTraversable="false" layoutX="518.0" layoutY="540.0" onAction="#GotoResetAdminPassword" prefHeight="27.0" prefWidth="230.0" text="Click here to reset password" textFill="#0f20dc">
+         <font>
+            <Font name="Times New Roman Bold Italic" size="16.0" />
+         </font></Hyperlink>
+      <Label alignment="CENTER" layoutX="480.0" layoutY="69.0" prefHeight="38.0" prefWidth="317.0" text="Admin Login Page" textOverrun="WORD_ELLIPSIS">
+         <font>
+            <Font name="KimberleyBl-Regular" size="30.0" />
+         </font>
+         <effect>
+            <Blend />
+         </effect>
+         <textFill>
+            <LinearGradient endX="1.0" endY="1.0" startX="0.4545454409989444">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color red="0.7263157963752747" green="0.14257310330867767" blue="0.14257310330867767" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="0.029629629105329514" green="1.0" blue="0.8059259057044983" />
+                     </color>
+                  </Stop>
+               </stops>
+            </LinearGradient>
+         </textFill>
+      </Label>
+      <GridPane layoutX="498.0" layoutY="160.0" prefHeight="168.0" prefWidth="282.0">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="151.20001220703125" minWidth="10.0" prefWidth="79.999951171875" />
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="257.400048828125" minWidth="10.0" prefWidth="229.600048828125" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints maxHeight="108.20003356933594" minHeight="10.0" prefHeight="71.4" vgrow="SOMETIMES" />
+          <RowConstraints maxHeight="80.9999755859375" minHeight="10.0" prefHeight="79.4" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <TextField fx:id="u_name" focusTraversable="false" prefHeight="30.0" prefWidth="163.0" promptText="Enter Username" GridPane.columnIndex="1">
+               <font>
+                  <Font name="Times New Roman" size="16.0" />
+               </font>
+            </TextField>
+            <PasswordField fx:id="psswrd" focusTraversable="false" prefHeight="30.0" prefWidth="173.0" promptText="Enter Password" GridPane.columnIndex="1" GridPane.rowIndex="1">
+               <font>
+                  <Font name="Times New Roman" size="16.0" />
+               </font>
+            </PasswordField>
+            <ImageView fitHeight="50.0" fitWidth="63.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="/com/speedbank/assets/images/Customer.png" />
+               </image>
+            </ImageView>
+            <ImageView pickOnBounds="true" preserveRatio="true" GridPane.rowIndex="1">
+               <image>
+                  <Image url="/com/speedbank/assets/images/password.png" />
+               </image>
+            </ImageView>
+         </children>
+      </GridPane>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#3b0230" height="650.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="345.0" />
+      <ImageView fitHeight="342.0" fitWidth="318.0" layoutX="14.0" layoutY="146.0" nodeOrientation="INHERIT" pickOnBounds="true">
+         <image>
+            <Image url="/com/speedbank/assets/images/SpeedBank-Main.png" />
+         </image>
+      </ImageView>
+      <JFXButton buttonType="RAISED" focusTraversable="false" layoutX="480.0" layoutY="415.0" onAction="#GotoAdminPage" ripplerFill="#07ea34" text="Sign In">
+         <font>
+            <Font name="Times New Roman Bold" size="22.0" />
+         </font>
+      </JFXButton>
+      <JFXButton buttonType="RAISED" focusTraversable="false" layoutX="677.0" layoutY="415.0" onAction="#gotoHomePage" ripplerFill="#e10f0f" text="Back" viewOrder="10.0">
+         <font>
+            <Font name="Times New Roman Bold" size="22.0" />
+         </font>
+         <effect>
+            <Lighting>
+               <bumpInput>
+                  <Shadow />
+               </bumpInput>
+               <light>
+                  <Light.Distant />
+               </light>
+            </Lighting>
+         </effect>
+      </JFXButton>
+   </children>
+</AnchorPane>

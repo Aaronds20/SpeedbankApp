@@ -1,0 +1,19 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Current File",
+            "request": "launch",
+            "mainClass": "${file}"
+        },
+        {
+            "type": "java",
+            "name": "App",
+            "request": "launch",
+            "mainClass": "com.speedbank.App",
+            "projectName": "speedbank",
+            "vmArgs": "--module-path 'C:\\Users\\Aaron Dsouza\\Downloads\\SpeedBank-20231220T071636Z-001\\SpeedBank\\javafx-sdk-18.0.2\\lib' --add-modules javafx.controls,javafx.fxml"
+        }
+    ]
+}

@@ -1,0 +1,276 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.effect.Light.Distant?>
+<?import javafx.scene.effect.Lighting?>
+<?import javafx.scene.effect.Shadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.FlowPane?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<VBox prefHeight="700.0" prefWidth="900.0" stylesheets="@application.css" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.speedbank.AccountCreationController">
+  <children>
+    <AnchorPane maxHeight="-1.0" maxWidth="-1.0" prefHeight="699.0" prefWidth="909.0" style="-fx-background-color: #b7c1bf;" VBox.vgrow="ALWAYS">
+         <children>
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#00fac8" height="700.0" layoutX="682.0" layoutY="-1.0" stroke="#f2e8e8" strokeMiterLimit="0.0" strokeType="INSIDE" strokeWidth="0.0" width="235.0">
+               <effect>
+                  <Lighting bumpInput="$null">
+                     <light>
+                        <Light.Distant />
+                     </light>
+                  </Lighting>
+               </effect>
+            </Rectangle>
+            <Label alignment="CENTER" layoutX="52.0" layoutY="70.0" prefHeight="38.0" prefWidth="594.0" text=" SpeedBank Account Creation Page" textAlignment="CENTER">
+               <font>
+                  <Font name="KimberleyBl-Regular" size="30.0" />
+               </font>
+               <textFill>
+                  <LinearGradient endX="0.9090909235405199" endY="0.7499999855503892" startX="0.43560605157505383" startY="0.14772733052571616">
+                     <stops>
+                        <Stop>
+                           <color>
+                              <Color red="0.8899999856948853" green="0.5592994689941406" blue="0.035599999129772186" />
+                           </color>
+                        </Stop>
+                        <Stop offset="1.0">
+                           <color>
+                              <Color red="0.8999999761581421" green="0.027000000700354576" blue="0.05026523023843765" />
+                           </color>
+                        </Stop>
+                     </stops>
+                  </LinearGradient>
+               </textFill>
+            </Label>
+            <Button focusTraversable="false" layoutX="703.0" layoutY="489.0" mnemonicParsing="false" onAction="#CreateAccount" prefHeight="110.0" prefWidth="178.0" styleClass="round" stylesheets="@application.css" text="Submit Form" textFill="#181818">
+               <font>
+                  <Font name="Times New Roman Bold" size="20.0" />
+               </font>
+               <graphic>
+                  <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="/com/speedbank/assets/images/Submit.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <effect>
+                  <Lighting diffuseConstant="1.46">
+                     <bumpInput>
+                        <Shadow />
+                     </bumpInput>
+                     <light>
+                        <Light.Distant />
+                     </light>
+                  </Lighting>
+               </effect>
+            </Button>
+            <Button layoutX="10.0" layoutY="8.0" mnemonicParsing="false" onAction="#goToSignInPage" styleClass="round">
+               <font>
+                  <Font name="Times New Roman Bold" size="20.0" />
+               </font>
+               <graphic>
+                  <ImageView fitHeight="150.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="/com/speedbank/assets/images/Back.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Label fx:id="dis_names" layoutX="-14.0" layoutY="5.0" visible="false">
+               <font>
+                  <Font size="1.0" />
+               </font></Label>
+            <Label fx:id="dis_accnos" layoutX="27.0" layoutY="-4.0">
+               <font>
+                  <Font size="1.0" />
+               </font></Label>
+            <Label fx:id="invalidatedetails" alignment="CENTER" layoutX="129.0" layoutY="654.0" prefHeight="19.0" prefWidth="414.0" textFill="RED">
+               <font>
+                  <Font name="Times New Roman Bold" size="16.0" />
+               </font></Label>
+            <FlowPane layoutX="39.0" layoutY="130.0" prefWidth="594.0">
+               <children>
+                  <GridPane prefHeight="498.0" prefWidth="575.0">
+                    <columnConstraints>
+                      <ColumnConstraints hgrow="SOMETIMES" maxWidth="302.8000244140625" minWidth="10.0" prefWidth="246.39998779296877" />
+                      <ColumnConstraints hgrow="SOMETIMES" maxWidth="329.6000122070312" minWidth="10.0" prefWidth="329.6000122070312" />
+                    </columnConstraints>
+                    <rowConstraints>
+                      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                      <RowConstraints fillHeight="false" minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                    </rowConstraints>
+                     <children>
+                        <Label alignment="CENTER" prefHeight="23.0" prefWidth="284.0" text="Account Type" textAlignment="CENTER" textFill="#663e3e">
+                           <font>
+                              <Font name="Times New Roman Bold" size="20.0" />
+                           </font>
+                        </Label>
+                        <RadioButton fx:id="current" focusTraversable="false" mnemonicParsing="false" prefHeight="27.0" prefWidth="118.0" text="Current" textFill="#663e3e" GridPane.columnIndex="1" GridPane.halignment="CENTER">
+                           <font>
+                              <Font name="Times New Roman Bold" size="20.0" />
+                           </font>
+                           <GridPane.margin>
+                              <Insets left="100.0" />
+                           </GridPane.margin>
+                           <toggleGroup>
+                              <ToggleGroup fx:id="accounts" />
+                           </toggleGroup>
+                        </RadioButton>
+                        <RadioButton fx:id="savings" focusTraversable="false" mnemonicParsing="false" prefHeight="27.0" prefWidth="125.0" text="Savings" textFill="#663e3e" toggleGroup="$accounts" GridPane.columnIndex="1">
+                           <font>
+                              <Font name="Times New Roman Bold" size="20.0" />
+                           </font>
+                        </RadioButton>
+                        <Label alignment="CENTER" prefHeight="20.0" prefWidth="270.0" text="Full Name" textFill="#663e3e" GridPane.rowIndex="1">
+                           <font>
+                              <Font name="Times New Roman Bold" size="20.0" />
+                           </font>
+                        </Label>
+                        <TextField fx:id="fullname" focusTraversable="false" prefHeight="26.0" prefWidth="233.0" promptText="John Dsouza" styleClass="round" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                           <font>
+                              <Font name="Times New Roman" size="15.0" />
+                           </font>
+                        </TextField>
+                        <Label alignment="CENTER" prefHeight="20.0" prefWidth="282.0" text="Gender" textFill="#663e3e" GridPane.rowIndex="2">
+                           <font>
+                              <Font name="Times New Roman Bold" size="20.0" />
+                           </font>
+                        </Label>
+                        <RadioButton fx:id="others" focusTraversable="false" mnemonicParsing="false" prefHeight="27.0" prefWidth="106.0" text="Others" textFill="#663e3e" GridPane.columnIndex="1" GridPane.halignment="RIGHT" GridPane.rowIndex="2">
+                           <font>
+                              <Font name="Times New Roman Bold" size="20.0" />
+                           </font>
+                           <toggleGroup>
+                              <ToggleGroup fx:id="gender" />
+                           </toggleGroup>
+                        </RadioButton>
+                        <RadioButton fx:id="female" focusTraversable="false" mnemonicParsing="false" prefHeight="24.0" prefWidth="111.0" text="Female" textFill="#663e3e" toggleGroup="$gender" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="2">
+                           <font>
+                              <Font name="Times New Roman Bold" size="20.0" />
+                           </font>
+                           <padding>
+                              <Insets right="10.0" />
+                           </padding>
+                        </RadioButton>
+                        <RadioButton fx:id="male" focusTraversable="false" mnemonicParsing="false" prefHeight="27.0" prefWidth="84.0" text="Male" textFill="#663e3e" toggleGroup="$gender" GridPane.columnIndex="1" GridPane.rowIndex="2">
+                           <font>
+                              <Font name="Times New Roman Bold" size="20.0" />
+                           </font>
+                        </RadioButton>
+                        <Label alignment="CENTER" prefHeight="20.0" prefWidth="287.0" text="Email Id" textFill="#663e3e" GridPane.rowIndex="3">
+                           <font>
+                              <Font name="Times New Roman Bold" size="20.0" />
+                           </font>
+                        </Label>
+                        <TextField fx:id="email" focusTraversable="false" prefHeight="26.0" prefWidth="212.0" promptText="john@gmail.com" styleClass="round" GridPane.columnIndex="1" GridPane.rowIndex="3">
+                           <font>
+                              <Font name="Times New Roman" size="15.0" />
+                           </font>
+                        </TextField>
+                        <Label alignment="CENTER" prefHeight="20.0" prefWidth="282.0" text="Phone Number" textFill="#663e3e" GridPane.rowIndex="4">
+                           <font>
+                              <Font name="Times New Roman Bold" size="20.0" />
+                           </font>
+                        </Label>
+                        <TextField fx:id="phone_no" focusTraversable="false" prefHeight="26.0" prefWidth="100.0" promptText="8899762365" styleClass="round" GridPane.columnIndex="1" GridPane.rowIndex="4">
+                           <font>
+                              <Font name="Times New Roman" size="15.0" />
+                           </font>
+                        </TextField>
+                        <Label alignment="CENTER" prefHeight="20.0" prefWidth="273.0" text="Password" textFill="#663e3e" GridPane.rowIndex="5">
+                           <font>
+                              <Font name="Times New Roman Bold" size="20.0" />
+                           </font>
+                        </Label>
+                        <PasswordField fx:id="password" prefHeight="26.0" prefWidth="198.0" styleClass="round" GridPane.columnIndex="1" GridPane.rowIndex="5">
+                           <font>
+                              <Font name="Times New Roman" size="15.0" />
+                           </font>
+                        </PasswordField>
+                        <Label alignment="CENTER" prefHeight="20.0" prefWidth="289.0" text="Confirm Password" textFill="#663e3e" GridPane.rowIndex="6">
+                           <font>
+                              <Font name="Times New Roman Bold" size="20.0" />
+                           </font>
+                        </Label>
+                        <PasswordField fx:id="c_password" focusTraversable="false" prefHeight="26.0" prefWidth="198.0" styleClass="round" GridPane.columnIndex="1" GridPane.rowIndex="6">
+                           <font>
+                              <Font name="Times New Roman" size="15.0" />
+                           </font>
+                        </PasswordField>
+                        <Label alignment="CENTER" prefHeight="20.0" prefWidth="290.0" text="Date of Birth" textFill="#663e3e" GridPane.rowIndex="7">
+                           <font>
+                              <Font name="Times New Roman Bold" size="20.0" />
+                           </font>
+                        </Label>
+                        <DatePicker fx:id="dob" editable="false" focusTraversable="false" prefHeight="26.0" prefWidth="198.0" promptText="15/02/2023" GridPane.columnIndex="1" GridPane.rowIndex="7" />
+                        <Label alignment="CENTER" prefHeight="20.0" prefWidth="294.0" text="Resisdential Address" textFill="#663e3e" GridPane.rowIndex="8">
+                           <font>
+                              <Font name="Times New Roman Bold" size="20.0" />
+                           </font>
+                        </Label>
+                        <TextArea fx:id="address" focusTraversable="false" prefHeight="39.0" prefWidth="299.0" promptText="Your Address" GridPane.columnIndex="1" GridPane.rowIndex="8">
+                           <font>
+                              <Font size="15.0" />
+                           </font>
+                        </TextArea>
+                        <Label alignment="CENTER" prefHeight="20.0" prefWidth="297.0" text="Pan Card Number" textFill="#663e3e" GridPane.rowIndex="9">
+                           <font>
+                              <Font name="Times New Roman Bold" size="20.0" />
+                           </font>
+                        </Label>
+                        <TextField fx:id="pan_card_no" focusTraversable="false" prefHeight="26.0" prefWidth="290.0" promptText="BOBLUI1234" styleClass="round" GridPane.columnIndex="1" GridPane.rowIndex="9">
+                           <font>
+                              <Font name="Times New Roman" size="15.0" />
+                           </font>
+                        </TextField>
+                        <Label alignment="CENTER" prefHeight="20.0" prefWidth="287.0" text="Deposit Amount" textFill="#663e3e" GridPane.rowIndex="10">
+                           <font>
+                              <Font name="Times New Roman Bold" size="20.0" />
+                           </font>
+                        </Label>
+                        <TextField fx:id="d_amt" focusTraversable="false" prefHeight="26.0" prefWidth="230.0" promptText="Amount should be greater than Rs.1000" styleClass="round" GridPane.columnIndex="1" GridPane.rowIndex="10">
+                           <font>
+                              <Font name="Times New Roman" size="15.0" />
+                           </font>
+                        </TextField>
+                     </children>
+                  </GridPane>
+               </children>
+            </FlowPane>
+            <ImageView fitHeight="277.0" fitWidth="229.0" layoutX="687.0" layoutY="134.0" nodeOrientation="INHERIT" pickOnBounds="true">
+               <image>
+                  <Image url="/com/speedbank/assets/images/SpeedBank-Main.png" />
+               </image>
+            </ImageView>
+         </children>
+    </AnchorPane>
+  </children>
+</VBox>

@@ -1,0 +1,19 @@
+/* JavaFX CSS - Leave this comment until you have at least create one rule which uses -fx-Property */
+.a_pane{
+	-fx-background-color:linear-gradient(to top, #00ffff 0%, #ff99cc 100%);
+}
+.tab_pane{
+-fx-background-color: linear-gradient(to top, #8BC6EC 0%, #9599E2 100%);
+	}
+.area{
+	 -fx-background-color: transparent;
+}
+.text{
+-fx-text-fill:#665252;
+}
+.round{
+-fx-background-radius: 15px;
+}
+.accordion .titled-pane > *.content{
+    -fx-background-color: transparent ;
+}

@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.Light.Distant?>
+<?import javafx.scene.effect.Lighting?>
+<?import javafx.scene.effect.Shadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="650.0" prefWidth="900.0" styleClass="tab_pane" stylesheets="@application.css" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.speedbank.DebitCardMainPageController">
+   <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#ff6600" height="656.0" layoutX="674.0" layoutY="-5.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="230.0" />
+      <Label alignment="CENTER" layoutX="40.0" layoutY="184.0" prefHeight="20.0" prefWidth="680.0" text="Apply for a New Debit Card" textAlignment="CENTER" textFill="#e70c0c" wrapText="true">
+         <font>
+            <Font name="Times New Roman Bold Italic" size="18.0" />
+         </font>
+      </Label>
+      <Button focusTraversable="false" layoutX="274.0" layoutY="220.0" mnemonicParsing="false" onAction="#ApplyForDebitCard" styleClass="round" text="Apply for Debit Card">
+         <font>
+            <Font name="Times New Roman Bold" size="20.0" />
+         </font>
+      </Button>
+      <Button focusTraversable="false" layoutX="9.0" layoutY="14.0" mnemonicParsing="false" onAction="#GoBackToDashBoard" styleClass="round">
+         <font>
+            <Font name="Times New Roman Bold" size="20.0" />
+         </font>
+         <graphic>
+            <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="/com/speedbank/assets/images/Back.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+      <Label fx:id="Name" focusTraversable="false" layoutX="303.0" layoutY="111.0" prefHeight="19.0" prefWidth="280.0" textFill="#9606df" visible="false">
+         <font>
+            <Font name="Times New Roman Bold" size="18.0" />
+         </font>
+      </Label>
+      <TextField fx:id="account" editable="false" focusTraversable="false" layoutX="356.0" layoutY="138.0" prefHeight="20.0" prefWidth="230.0" visible="false">
+         <font>
+            <Font name="Times New Roman" size="16.0" />
+         </font>
+      </TextField>
+      <Button contentDisplay="TOP" focusTraversable="false" layoutX="265.0" layoutY="586.0" mnemonicParsing="false" onAction="#RevealCardDetails" prefHeight="36.0" prefWidth="218.0" styleClass="round" text="Reveal Card Details">
+         <font>
+            <Font name="Times New Roman Bold" size="20.0" />
+         </font>
+      </Button>
+      <Label alignment="CENTER" layoutX="188.0" layoutY="112.0" prefHeight="38.0" prefWidth="397.0" text="Debit Card Main Page">
+         <font>
+            <Font name="KimberleyBl-Regular" size="30.0" />
+         </font>
+         <textFill>
+            <LinearGradient endX="0.8143939538435503" endY="0.7727272772427761" startX="0.30681818159240665" startY="0.16666665221705582">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color red="0.060818713158369064" green="0.46602338552474976" blue="0.6842105388641357" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="0.03730214387178421" green="0.9684210419654846" blue="0.021520467475056648" />
+                     </color>
+                  </Stop>
+               </stops>
+            </LinearGradient>
+         </textFill>
+      </Label>
+      <Rectangle arcHeight="50.0" arcWidth="50.0" fill="#74808c" height="244.0" layoutX="139.0" layoutY="316.0" stroke="WHITE" strokeType="INSIDE" strokeWidth="0.0" width="471.0">
+         <effect>
+            <Lighting>
+               <bumpInput>
+                  <Shadow />
+               </bumpInput>
+               <light>
+                  <Light.Distant />
+               </light>
+            </Lighting>
+         </effect>
+      </Rectangle>
+      <ImageView fx:id="img" fitHeight="70.0" fitWidth="70.0" layoutX="178.0" layoutY="345.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="/com/speedbank/assets/images/Card_Chip.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="150.0" fitWidth="175.0" layoutX="421.0" layoutY="316.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="/com/speedbank/assets/images/SpeedBank.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="60.0" fitWidth="80.0" layoutX="516.0" layoutY="501.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="/com/speedbank/assets/images/MasterCard.png" />
+         </image>
+      </ImageView>
+      <Label fx:id="card_number" layoutX="178.0" layoutY="420.0" prefHeight="18.0" prefWidth="382.0" textFill="WHITE">
+         <font>
+            <Font name="Tahoma Bold" size="25.0" />
+         </font>
+      </Label>
+      <Label fx:id="name" layoutX="178.0" layoutY="470.0" prefHeight="18.0" prefWidth="382.0" textFill="WHITE">
+         <font>
+            <Font name="Tahoma Bold" size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="224.0" layoutY="519.0" prefHeight="23.0" prefWidth="126.0" text="VALID THRU" textFill="#ece2e2" textOverrun="WORD_ELLIPSIS">
+         <font>
+            <Font name="Lucida Sans Demibold" size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="exp_date" layoutX="358.0" layoutY="518.0" prefHeight="23.0" prefWidth="125.0" textFill="WHITE">
+         <font>
+            <Font name="Tahoma Bold" size="20.0" />
+         </font>
+      </Label>
+      <Label fx:id="cvv" layoutX="323.0" layoutY="380.0" textFill="#ddfa05">
+         <font>
+            <Font name="Lucida Sans Demibold" size="18.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="315.0" fitWidth="297.0" layoutX="641.0" layoutY="166.0" nodeOrientation="INHERIT" pickOnBounds="true">
+         <image>
+            <Image url="/com/speedbank/assets/images/SpeedBank-Main.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>
