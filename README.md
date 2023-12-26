@@ -4,14 +4,12 @@ have been created using Java. The entire front end was created using JavaFX.
 
 The main objectives of this project are:<br />
 • Login Credentials for customers security.<br />
-• Creation of a new bank account as well as selection of different accounts like saving 
-A/C, Current A/C for the customer.<br />
-• View account statement of the customer according to the selected time period.
+• Creation of a new bank account as well as selection of different accounts like saving A/C, Current A/C for the customer.<br />
+• View account statement of the customer according to the selected time period.<br />
 • Ability to check all transactions made with their account.<br />
 • Applying for a loan.<br />
 • Transferring money to the local customer account number.<br />
-• Ability to see the number of loans you have applied for and the number of months left
-to pay the loan.<br />
+• Ability to see the number of loans you have applied for and the number of months left to pay the loan.<br />
 • Ability to apply for a debit card<br />
 
 Images
